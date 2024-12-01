@@ -1,15 +1,15 @@
 export const getGifs = async( category ) => {
-    const url = 
-    `https://api.giphy.com/v1/gifs/search?api_key=boVMA0pXVZMD7Wl3WhEXxIbOMqBSm4Z7&q=${
-    category }&limit=10`; 
-    const resp = await fetch( url ); 
-    const { data } = await resp.json(); 
+   const url = 
+   `https://api.giphy.com/v1/gifs/search?api_key=gJsWN3RmMAChHkGWxYD0uZRsabHR5TJ0&q=${
+   category }&limit=10`; 
+   const resp = await fetch( url ); 
+   const { data } = await resp.json(); 
+   
+   const gifs = data.map( img => ({ 
+       id: img.id, 
+       title: img.title, 
+       url: img.images.downsized_medium.url 
+   })); 
     
-    const gifs = data.map( img => ({ 
-        id: img.id, 
-        title: img.title, 
-        url: img.images.downsized_medium.url 
-    })); 
-     
-    return gifs; 
-    }
+   return gifs; 
+   }
