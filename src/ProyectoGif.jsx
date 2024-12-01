@@ -1,6 +1,8 @@
 import { useState } from "react"; 
 import { AddCategory } from './components/AddCategory'; 
 import { GifGrid } from './components/GifGrid'; 
+import PropTypes from 'prop-types';
+
 export const ProyectoGif = () => { 
    
 
@@ -28,4 +30,8 @@ y una categoría */}
       ))} 
     </> 
   ); 
+};
+
+ProyectoGif.propTypes = {
+  categories: PropTypes.arrayOf(PropTypes.string),
 };

@@ -21,7 +21,7 @@ export const useFetchGifs = ( category ) => {
     // Usamos useEffect para llamar a getImages cuando se monta el componente
     useEffect( () =>{
         getImages();
-    },[]);
+    },[category]);
     // Devolvemos un objeto con images e isLoading
     return{
         images,

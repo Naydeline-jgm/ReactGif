@@ -1,6 +1,7 @@
 import { GifItem } from './GifItem'; 
 import { useFetchGifs } from '../hooks/useFetchGifs'; 
- 
+import PropTypes from 'prop-types';
+
 // Definimos un componente funcional llamado GifGrid que toma una categoría como prop 
 export const GifGrid = ({ category }) => { 
  
@@ -28,4 +29,8 @@ export const GifGrid = ({ category }) => {
  
         </> 
     ) 
-} 
+}
+
+GifGrid.propTypes = {
+  category: PropTypes.string.isRequired,
+};
