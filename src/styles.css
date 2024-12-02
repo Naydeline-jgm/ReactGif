@@ -1,55 +1,106 @@
+/* Aplica estilos generales a todos los elementos */
 * {
+    /* Establece la fuente predeterminada */
     font-family: Helvetica, Arial, sans-serif;
+    /* Fondo gris claro para todos los elementos */
     background-color: rgb(234, 234, 234);
-    }
-    body {
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    /* Agrega un margen interno para separar el contenido de los bordes */
     padding: 60px;
-    }
-    input {
+}
+
+/* Estilos para los campos de entrada */
+input {
+    /* Fondo blanco para los campos de entrada */
     background-color: white;
+    /* Bordes redondeados para un diseño más suave */
     border-radius: 5px;
+    /* Borde púrpura de 1 píxel */
     border: 1px solid rgb(97, 32, 158);
+    /* Texto negro dentro del input */
     color: black;
+    /* Aumenta el tamaño de la fuente */
     font-size: 1.2rem;
+    /* Elimina el contorno azul predeterminado al enfocar */
     outline: none;
+    /* Relleno interno para mejorar la presentación */
     padding: 10px 15px;
+    /* El campo ocupa todo el ancho del contenedor */
     width: 100%;
-    }
-    h2 {
+}
+
+/* Estilo para encabezados de nivel 2 */
+h2 {
+    /* Tamaño de la fuente ligeramente mayor al tamaño base */
     font-size: 1.5rem;
-    }
-    h3 {
+}
+
+/* Estilo para encabezados de nivel 3 */
+h3 {
+    /* Tamaño de la fuente significativamente mayor al tamaño base */
     font-size: 3rem;
+    /* Espaciado inferior para separar del contenido siguiente */
     margin-bottom: 5px;
-    }
-    .card-grid {
+}
+
+/* Contenedor que organiza las tarjetas en cuadrícula */
+.card-grid {
+    /* Activa el diseño flexible */
     display: flex;
+    /* Organiza los elementos en filas */
     flex-direction: row;
+    /* Permite que los elementos se ajusten automáticamente a la siguiente línea */
     flex-wrap: wrap;
+    /* Centra las tarjetas horizontalmente */
     justify-content: center;
-    }
-    .card {
-        align-content: center;
-        align-items: center;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
-        display: flex;
-        flex-direction: column;
-        height: 0%;
-        justify-content: center;
-        margin-bottom: 20px;
-        margin-right: 20px;
-        overflow: hidden;
-        }
-        .card p {
-        background-color: white;
-        flex: 1;
-        font-size: 1.5rem;
-        margin-top: 5px;
-        padding: 5px 20px 0px 20px;
-        text-align: center;
-        }
-        .card img {
-        width: 100%;
-        }
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    /* Centra el contenido de la tarjeta */
+    align-content: center;
+    align-items: center;
+    /* Fondo blanco */
+    background-color: white;
+    /* Bordes redondeados */
+    border-radius: 10px;
+    /* Sombra suave para crear efecto de elevación */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    /* Configuración flexible para organizar los elementos de la tarjeta en columna */
+    display: flex;
+    flex-direction: column;
+    /* Altura al 0% (parece un error, debería ajustarse) */
+    height: 0%;
+    /* Centra los elementos dentro de la tarjeta */
+    justify-content: center;
+    /* Margen inferior y derecho para separar las tarjetas */
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /* Oculta contenido que exceda los límites de la tarjeta */
+    overflow: hidden;
+}
+
+/* Estilos para párrafos dentro de las tarjetas */
+.card p {
+    /* Fondo blanco para los párrafos */
+    background-color: white;
+    /* Permite que el párrafo se expanda proporcionalmente dentro del contenedor flexible */
+    flex: 1;
+    /* Tamaño de fuente más grande para destacar el texto */
+    font-size: 1.5rem;
+    /* Espaciado superior pequeño */
+    margin-top: 5px;
+    /* Relleno interno uniforme */
+    padding: 5px 20px 0px 20px;
+    /* Centra el texto dentro del párrafo */
+    text-align: center;
+}
+
+/* Estilos para imágenes dentro de las tarjetas */
+.card img {
+    /* Ajusta la imagen para que ocupe todo el ancho de la tarjeta */
+    width: 100%;
+}

@@ -1,63 +1,106 @@
-*{
+/* Aplica estilos generales a todos los elementos */
+* {
+    /* Establece la fuente predeterminada */
     font-family: Helvetica, Arial, sans-serif;
+    /* Color de fondo gris claro */
     background-color: rgb(234, 234, 234);
 }
 
+/* Estilos para el cuerpo de la página */
 body {
+    /* Agrega un margen interno de 60 píxeles alrededor del contenido */
     padding: 60px;
 }
 
+/* Estilos para los campos de entrada */
 input {
+    /* Fondo blanco */
     background-color: white;
+    /* Bordes redondeados */
     border-radius: 5px;
+    /* Borde púrpura sólido de 1 píxel */
     border: 1px solid rgb(97, 32, 158);
+    /* Texto de color negro */
     color: black;
+    /* Tamaño de fuente más grande */
     font-size: 1.2rem;
+    /* Elimina el contorno azul predeterminado al enfocar */
     outline: none;
+    /* Espaciado interno para un diseño uniforme */
     padding: 10px 15px;
+    /* El campo ocupará el 100% del contenedor */
     width: 100%;
 }
 
+/* Estilo para encabezados de nivel 2 */
 h2 {
+    /* Tamaño de la fuente moderadamente grande */
     font-size: 1.5rem;
 }
 
+/* Estilo para encabezados de nivel 3 */
 h3 {
+    /* Tamaño de la fuente significativamente grande */
     font-size: 3rem;
+    /* Espacio inferior pequeño */
     margin-bottom: 5px;
 }
 
+/* Contenedor de tarjetas con diseño en cuadrícula */
 .card-grid {
+    /* Activa el diseño flexible */
     display: flex;
+    /* Ordena los elementos en filas */
     flex-direction: row;
+    /* Permite que las tarjetas se envuelvan a la siguiente línea */
     flex-wrap: wrap;
+    /* Centra las tarjetas horizontalmente */
     justify-content: center;
 }
 
+/* Estilos individuales para cada tarjeta */
 .card {
+    /* Centra el contenido de las tarjetas */
     align-content: center;
     align-items: center;
+    /* Fondo blanco */
     background-color: white;
+    /* Bordes redondeados */
     border-radius: 10px;
+    /* Sombra suave para un efecto elevado */
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+    /* Diseño flexible para organizar el contenido en columna */
     display: flex;
     flex-direction: column;
+    /* La altura al 0% parece incorrecta, debería corregirse */
     height: 0%;
+    /* Centra los elementos dentro de la tarjeta */
     justify-content: center;
+    /* Espacio inferior y lateral entre tarjetas */
     margin-bottom: 20px;
     margin-right: 20px;
+    /* Oculta el contenido que desborda los límites */
     overflow: hidden;
 }
 
+/* Estilos para los párrafos dentro de las tarjetas */
 .card p {
+    /* Fondo blanco */
     background-color: white;
+    /* Hace que el párrafo se expanda proporcionalmente */
     flex: 1;
+    /* Tamaño de fuente más grande */
     font-size: 1.5rem;
+    /* Espacio superior pequeño */
     margin-top: 5px;
+    /* Espaciado interno uniforme */
     padding: 5px 20px 0px 20px;
+    /* Centra el texto dentro del párrafo */
     text-align: center;
 }
 
+/* Estilo para imágenes dentro de las tarjetas */
 .card img {
+    /* La imagen ocupará todo el ancho del contenedor */
     width: 100%;
 }
